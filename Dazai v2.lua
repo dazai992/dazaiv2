@@ -3430,7 +3430,7 @@ HUB.TextColor3 = Color3.fromRGB(170, 85, 0)
 HUB.TextSize = 45.000
 HUB.MouseButton1Down:connect(function()
 	Hubframe.Visible = true
-	WalkonAir.Visible = false
+	main.Visible = false
 end)
 
 Hubframe.Name = "Hubframe"
@@ -3488,6 +3488,7 @@ Hubclose.TextSize = 14.000
 Hubclose.MouseButton1Down:connect(function()
 	Hubframe.Visible = false
 	HUB.Visible = true
+        main.Visible = true
 end)
 
 BedWars.Name = "Bed Wars"
