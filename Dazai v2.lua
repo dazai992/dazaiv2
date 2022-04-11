@@ -28,6 +28,7 @@ local WalkonAir = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local ImageLabel_3 = Instance.new("ImageLabel")
 local Open = Instance.new("TextButton")
+local tp = Instance.new("TextButton")
 
 --Properties:
 
@@ -87,6 +88,19 @@ Btools.TextColor3 = Color3.fromRGB(170, 85, 0)
 Btools.TextSize = 23.000
 Btools.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+end)
+
+tp.Name = "tp"
+tp.Parent = Hubframe
+tp.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+tp.Position = UDim2.new(0.286639363, 0, 0.695555866, 0)
+tp.Size = UDim2.new(0, 102, 0, 49)
+tp.Font = Enum.Font.SourceSans
+tp.Text = "click tp"
+tp.TextColor3 = Color3.fromRGB(0, 0, 0)
+tp.TextSize = 14.000
+tp.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Click%20Teleport.txt"))()
 end)
 
 Speed.Name = "Speed"
